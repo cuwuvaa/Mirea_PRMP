@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/LOGO"
+        android:layout_width="214dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/mirea_coat_of_arms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/FIO"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="55dp"
+        android:hint="ФИО"
+        android:textColor="#8A24B6"
+        android:textColorHint="#881F1818"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LOGO" />
+
+    <EditText
+        android:id="@+id/GROUP"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="55dp"
+        android:hint="Группа"
+        android:textColor="#8A24B6"
+        android:textColorHint="#881F1818"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FIO" />
+
+    <EditText
+        android:id="@+id/AGE"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:textColor="#8A24B6"
+        android:hint="Возраст"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GROUP" />
+
+    <EditText
+        android:id="@+id/GRADE"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp"
+        android:textColor="#8A24B6"
+        android:ems="10"
+        android:hint="Оценка"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GROUP" />
+
+    <Button
+        android:id="@+id/SUBMIT"
+        android:layout_width="287dp"
+        android:layout_height="131dp"
+        android:text="Отправить"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GRADE"
+        app:layout_constraintVertical_bias="0.4"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
